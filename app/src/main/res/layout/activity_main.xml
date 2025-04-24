@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#5F70DE">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ws" />
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="🌧 ❄ WEATHER APP ❄ ☀ "
+        android:textColor="#040404"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:contentDescription="Weather App Title" />
+
+    <!-- Buttons for predefined cities -->
+    <Button
+        android:id="@+id/new_york"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="New York"
+        android:background="#3C487E"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/london"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_york"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="London"
+        android:background="#3C487E"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/tokyo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/london"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Tokyo"
+        android:background="#3C487E"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/colombo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tokyo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Colombo"
+        android:background="#3C487E"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/dubai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colombo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Dubai"
+        android:background="#3C487E"
+        android:textColor="#FFFFFF" />
+
+    <!-- TextView for displaying weather data -->
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dubai"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:background="#A4CAE0"
+        android:textColor="#000000"
+        android:text="Weather details will appear here☔⛈️❄️⛅"
+        android:textStyle="bold" />
+</RelativeLayout>
