@@ -29,3 +29,9 @@ jobs:
 
     - name: Run unit tests
       run: ./gradlew testDebugUnitTest
+      #upload APK to GitHub
+    - name: Upload APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: app-debug
+        path: app/build/outputs/apk/debug/app-debug.apk
